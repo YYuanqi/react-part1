@@ -5,7 +5,7 @@ const Header = (props) => {
   console.log(props);
   return (
     <>
-      <h1>{props.course.name}</h1>
+      <h1>{props.course}</h1>
     </>
   )
 };
@@ -54,6 +54,7 @@ const App = () => {
       }]
   };
 
+  console.log(course.name);
   return (
     <div>
       <Header course={course.name}/>
